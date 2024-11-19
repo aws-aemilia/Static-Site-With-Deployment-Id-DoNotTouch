@@ -25,6 +25,7 @@ module.exports = merge(common, {
       buildTime: buildTime,
       deploymentId: process.env.AWS_AMPLIFY_DEPLOYMENT_ID,
       filename: 'index.html',
+      buildTimestamp: new Date().toISOString(),
     }),
     new CopyPlugin({
       patterns: [
